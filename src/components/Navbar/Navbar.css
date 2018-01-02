@@ -1,0 +1,40 @@
+.navbar-main {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar-mobile-menu {
+    margin-right: 10px;    
+}
+
+.drawer {
+    background-color: #1a1a1a !important;
+}
+
+.menu-item {
+    color: white !important;
+    font-size: 20px !important;
+}
+
+.navbar-desktop-links {
+    display: none;
+}
+
+
+
+
+@media(min-width: 1000px) {
+    .navbar-mobile-menu {
+        display: none;
+    }
+
+    .navbar-desktop-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+}
