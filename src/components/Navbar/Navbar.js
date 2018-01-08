@@ -47,42 +47,53 @@ class Navbar extends Component {
                     </Drawer>
                 </div>  
                 <div className="navbar-desktop-links">
-                    <Link to='/' className='link'>
+                    <Link to='/login' className='link'>
                         <FlatButton 
-                            label="Home" 
+                            label="Admin" 
                             labelStyle={{fontSize: '25px'}}
                             style={{
                                 color: 'white', 
                                 'font-family': 'spaceage',
                                 height: '40px'}}/>
                     </Link>
-                    <Link to='/projects' className='link'>
-                        <FlatButton 
-                            label="Projects" 
-                            labelStyle={{fontSize: '25px'}}
-                            style={{
-                                color: 'white', 
-                                'font-family': 'spaceage',
-                                height: '40px'}}/>
-                    </Link>
-                    <Link to='/news' className='link'>
-                        <FlatButton 
-                            label="News" 
-                            labelStyle={{fontSize: '25px'}}
-                            style={{
-                                color: 'white', 
-                                'font-family': 'spaceage',
-                                height: '40px'}}/>
-                    </Link>
-                    <Link to='/about' className='link'>
-                        <FlatButton 
-                            label="About" 
-                            labelStyle={{fontSize: '25px'}}
-                            style={{
-                                color: 'white', 
-                                'font-family': 'spaceage',
-                                height: '40px'}}/>
-                    </Link>
+                    <div className="nabar-desktop-links-right">
+                        <Link to='/' className='link'>
+                            <FlatButton 
+                                label="Home" 
+                                labelStyle={{fontSize: '25px'}}
+                                style={{
+                                    color: 'white', 
+                                    'font-family': 'spaceage',
+                                    height: '40px'}}/>
+                        </Link>
+                        <Link to='/projects' className='link'>
+                            <FlatButton 
+                                label="Projects" 
+                                labelStyle={{fontSize: '25px'}}
+                                style={{
+                                    color: 'white', 
+                                    'font-family': 'spaceage',
+                                    height: '40px'}}/>
+                        </Link>
+                        <Link to='/news' className='link'>
+                            <FlatButton 
+                                label="News" 
+                                labelStyle={{fontSize: '25px'}}
+                                style={{
+                                    color: 'white', 
+                                    'font-family': 'spaceage',
+                                    height: '40px'}}/>
+                        </Link>
+                        <Link to='/about' className='link'>
+                            <FlatButton 
+                                label="About" 
+                                labelStyle={{fontSize: '25px'}}
+                                style={{
+                                    color: 'white', 
+                                    'font-family': 'spaceage',
+                                    height: '40px'}}/>
+                        </Link>
+                        </div>
                 </div>
             </div>
         )
