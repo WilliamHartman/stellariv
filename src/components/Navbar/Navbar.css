@@ -4,10 +4,39 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-title {
+    height: 50px;
+    width: 275px;
+    font-size: 35px;
+    font-family: spaceage;
+    font-weight: 700;
+    color: gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+
+.navbar-title-iv {
+    color: lightgrey;
+    font-weight: 500;    
+}
+
+.link {
+    text-decoration: none !important;    
 }
 
 .navbar-mobile-menu {
-    margin-right: 10px;    
+    width: 100%;
+    height: 50px;
+    margin-right: 10px;   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .drawer {

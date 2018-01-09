@@ -1,0 +1,29 @@
+.About {
+    width: 100%;
+    height: 100vh;
+    margin-top: -50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-navback {
+    width: 100%;
+    height: 50px;
+    border-bottom: 3px lightgrey solid; 
+}
+
+.about-main-cont {
+    width: 100%;
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: row;
+}
+
+.about-main-lefttop {
+    width: 100%;
+}
+
+.about-main-rightbottom {
+
+}
+

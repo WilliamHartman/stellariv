@@ -27,42 +27,48 @@ class Navbar extends Component {
         return(
             <div className='navbar-main'>
                 <div className='navbar-mobile-menu'>
-                    <MDMenu
-                        size={35}
-                        color='white'                         
-                        onClick={this.handleToggle}
-                    />
-                    <Drawer
-                        docked={false}
-                        width={200}
-                        open={this.state.open}
-                        openSecondary={true}
-                        onRequestChange={(open) => this.setState({open})}
-                        containerClassName='drawer'
-                        >
-                        <Link to='/' className='link' style={{ textDecoration: 'none' }}><MenuItem onClick={this.handleClose} className='menu-item'>Home</MenuItem></Link>
-                        <Link to='/projects' className='link' style={{ textDecoration: 'none' }}><MenuItem onClick={this.handleClose} className='menu-item'>Projects</MenuItem></Link>
-                        <Link to='/news' className='link' style={{ textDecoration: 'none' }}><MenuItem onClick={this.handleClose} className='menu-item'>News</MenuItem></Link>
-                        <Link to='/about' className='link' style={{ textDecoration: 'none' }}><MenuItem onClick={this.handleClose} className='menu-item'>About</MenuItem></Link>
-                    </Drawer>
+                    <div>
+                        <Link to='/' className='link'><div className='navbar-title'>STELLAR <span className='navbar-title-iv'>IV</span></div></Link>                    
+                    </div>
+                    <div>
+                        <MDMenu
+                            size={35}
+                            color='lightgrey'                         
+                            onClick={this.handleToggle}
+                        />
+                        <Drawer
+                            docked={false}
+                            width={200}
+                            open={this.state.open}
+                            openSecondary={true}
+                            onRequestChange={(open) => this.setState({open})}
+                            containerClassName='drawer'
+                            >
+                            <Link to='/' className='link' style={{ textDecoration: 'none' }}><MenuItem onClick={this.handleClose} className='menu-item'>Home</MenuItem></Link>
+                            <Link to='/projects' className='link' style={{ textDecoration: 'none' }}><MenuItem onClick={this.handleClose} className='menu-item'>Projects</MenuItem></Link>
+                            <Link to='/news' className='link' style={{ textDecoration: 'none' }}><MenuItem onClick={this.handleClose} className='menu-item'>News</MenuItem></Link>
+                            <Link to='/about' className='link' style={{ textDecoration: 'none' }}><MenuItem onClick={this.handleClose} className='menu-item'>About</MenuItem></Link>
+                        </Drawer>
+                    </div>
                 </div>  
                 <div className="navbar-desktop-links">
-                    <Link to='/login' className='link'>
+                    {/* <Link to='/login' className='link'>
                         <FlatButton 
                             label="Admin" 
                             labelStyle={{fontSize: '25px'}}
                             style={{
-                                color: 'white', 
+                                color: 'lightgrey', 
                                 'font-family': 'spaceage',
                                 height: '40px'}}/>
-                    </Link>
+                    </Link> */}
+                    <Link to='/' className='link'><div className='navbar-title'>STELLAR <span className='navbar-title-iv'>IV</span></div></Link>
                     <div className="nabar-desktop-links-right">
                         <Link to='/' className='link'>
                             <FlatButton 
                                 label="Home" 
                                 labelStyle={{fontSize: '25px'}}
                                 style={{
-                                    color: 'white', 
+                                    color: 'lightgrey', 
                                     'font-family': 'spaceage',
                                     height: '40px'}}/>
                         </Link>
@@ -71,7 +77,7 @@ class Navbar extends Component {
                                 label="Projects" 
                                 labelStyle={{fontSize: '25px'}}
                                 style={{
-                                    color: 'white', 
+                                    color: 'lightgrey', 
                                     'font-family': 'spaceage',
                                     height: '40px'}}/>
                         </Link>
@@ -80,7 +86,7 @@ class Navbar extends Component {
                                 label="News" 
                                 labelStyle={{fontSize: '25px'}}
                                 style={{
-                                    color: 'white', 
+                                    color: 'lightgrey', 
                                     'font-family': 'spaceage',
                                     height: '40px'}}/>
                         </Link>
@@ -89,7 +95,7 @@ class Navbar extends Component {
                                 label="About" 
                                 labelStyle={{fontSize: '25px'}}
                                 style={{
-                                    color: 'white', 
+                                    color: 'lightgrey', 
                                     'font-family': 'spaceage',
                                     height: '40px'}}/>
                         </Link>
