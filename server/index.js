@@ -39,8 +39,7 @@ app.use(session({
 
 
 //Endpoints
-app.get(`/api/auth/me`, dCtrl.authMe)
-// app.get(`/api/data/getTodaySleep/:id/:date/:rest`, dCtrl.getTodaySleep)
+app.post(`/authorize`, dCtrl.authorize)
 
 
 app.get('*', (req, res)=>{

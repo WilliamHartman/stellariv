@@ -1,16 +1,23 @@
 import React, { Component } from 'react';
 import './Login.css';
 import { connect } from 'react-redux';
-import { } from './../../ducks/reducer';
+import { updateUserData } from './../../ducks/reducer';
 import { withRouter } from 'react-router';
 import { Link } from 'react-router-dom';
 import FlatButton from 'material-ui/FlatButton';
+import axios from 'axios';
 
 
 class Login extends Component {
   constructor(){
     super();
- 
+    
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(){
+    let username = this.refs.username.value.toLowerCase();
+    this.props.updateUserData( username, this.refs.password.value)
   }
   
   render(){
@@ -21,13 +28,13 @@ class Login extends Component {
               <div className="login-inputs">
                 <input ref='username' type="text" className="login-username" placeholder="username"/>
                 <input ref='password' type="text" className="login-password" placeholder="password"/>
-                <Link to='/admin' className='link'>
+                <Link to='/admin' className='link' onClick={this.handleClick}>
                   <FlatButton 
                       label="Login" 
                       labelStyle={{fontSize: '25px'}}
                       style={{
                           color: 'white', 
-                          'font-family': 'spaceage',
+                          'fontFamily': 'spaceage',
                           height: '40px'}}/>
               </Link>
               </div>
@@ -43,4 +50,4 @@ function mapStateToProps(state){
     }
   }
   
-  export default withRouter(connect(mapStateToProps, { })(Login));
+  export default withRouter(connect(mapStateToProps, { updateUserData })(Login));

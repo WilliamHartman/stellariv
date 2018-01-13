@@ -5,6 +5,7 @@ import About from './components/About/About';
 import Projects from './components/Projects/Projects';
 import News from './components/News/News';
 import Login from './components/Login/Login';
+import Admin from './components/Admin/Admin';
 
 export default (
     <Switch>
@@ -13,5 +14,6 @@ export default (
         <Route path='/projects' component={ Projects } />
         <Route path='/news' component={ News } />
         <Route path='/about' component={ About } />
+        <Route path='/admin' component={ Admin } />
     </Switch>
 )

@@ -58,7 +58,7 @@ class Navbar extends Component {
                             labelStyle={{fontSize: '25px'}}
                             style={{
                                 color: 'lightgrey', 
-                                'font-family': 'spaceage',
+                                'fontFamily': 'spaceage',
                                 height: '40px'}}/>
                     </Link> */}
                     <Link to='/' className='link'><div className='navbar-title'>STELLAR <span className='navbar-title-iv'>IV</span></div></Link>
@@ -69,7 +69,7 @@ class Navbar extends Component {
                                 labelStyle={{fontSize: '25px'}}
                                 style={{
                                     color: 'lightgrey', 
-                                    'font-family': 'spaceage',
+                                    'fontFamily': 'spaceage',
                                     height: '40px'}}/>
                         </Link>
                         <Link to='/projects' className='link'>
@@ -78,7 +78,7 @@ class Navbar extends Component {
                                 labelStyle={{fontSize: '25px'}}
                                 style={{
                                     color: 'lightgrey', 
-                                    'font-family': 'spaceage',
+                                    'fontFamily': 'spaceage',
                                     height: '40px'}}/>
                         </Link>
                         <Link to='/news' className='link'>
@@ -87,7 +87,7 @@ class Navbar extends Component {
                                 labelStyle={{fontSize: '25px'}}
                                 style={{
                                     color: 'lightgrey', 
-                                    'font-family': 'spaceage',
+                                    'fontFamily': 'spaceage',
                                     height: '40px'}}/>
                         </Link>
                         <Link to='/about' className='link'>
@@ -96,7 +96,7 @@ class Navbar extends Component {
                                 labelStyle={{fontSize: '25px'}}
                                 style={{
                                     color: 'lightgrey', 
-                                    'font-family': 'spaceage',
+                                    'fontFamily': 'spaceage',
                                     height: '40px'}}/>
                         </Link>
                         </div>

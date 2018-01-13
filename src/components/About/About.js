@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './About.css';
+import { Link } from 'react-router-dom';
 
 
 class About extends Component {
@@ -34,7 +35,7 @@ class About extends Component {
               </p>
             </div>
             <div className="about-main-rightbottom">
-            
+              <Link to='/login'><button>Admin Login</button></Link>
             </div>
           </div>
         </div>
