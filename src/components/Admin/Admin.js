@@ -4,7 +4,8 @@ import { connect } from 'react-redux';
 import { } from './../../ducks/reducer';
 import { withRouter } from 'react-router';
 import { Link } from 'react-router-dom';
-import NewsCard from '../News_Card/News_Card.js';
+import NewsCard from '../Admin_News_Card/Admin_News_Card.js';
+import ProjectCard from '../Admin_News_Card/Admin_News_Card.js';
 
 
 class Admin extends Component {
@@ -15,6 +16,8 @@ class Admin extends Component {
   
   render(){
     let newsCardJSX = this.props.news.map(article => <NewsCard news={'test'}/>)
+
+    let projectCardJSX = this.props.news.map(article => <ProjectCard news={'test'}/>)
 
     if(this.props.userData.authorized === true){
       return (
@@ -29,7 +32,7 @@ class Admin extends Component {
               <div className="admin-filter">
                 <input type="text" placeholder='Filter'/>
               </div>
-              <NewsCard/>
+              <NewsCard />
             </div>
             <div className="admin-np-cont">
               <div className="admin-section-title">
@@ -39,6 +42,7 @@ class Admin extends Component {
               <div className="admin-filter">
                 <input type="text" placeholder='Filter'/>
               </div>
+              <ProjectCard />
             </div>
           </div>
         </div>
